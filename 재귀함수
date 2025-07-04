@@ -1,0 +1,22 @@
+#include <iostream>
+//재귀함수 팩토리얼
+//int Factorial_Re(int num) {
+//	if (num == 1) {
+//		return 1;
+//	}
+//	return num * Factorial_Re(num - 1);
+//}
+int fibonacci(int num) {
+	if (1 == num || 2 == num) {
+		return 1;
+	}
+	int value = fibonacci(num - 1) + fibonacci(num - 2);
+	return value;
+}
+int main() {
+	/*int value = Factorial_Re(5);
+	std::cout << value;
+	return value;*/
+	int a = fibonacci(9);
+	std::cout << a;
+}
